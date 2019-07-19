@@ -1,9 +1,5 @@
 package top.auzqy.design.pattern.creational.simplefactory.example2.highversion;
 
-import lombok.extern.slf4j.Slf4j;
-
-import java.math.BigDecimal;
-
 /**
  * @Description: 计算工厂
  *
@@ -13,7 +9,6 @@ import java.math.BigDecimal;
  * @Author: zqy
  * @CreateTime: 2019-07-19 17:59
  */
-@Slf4j
 public class CalculateFactory {
 
 
@@ -55,11 +50,11 @@ public class CalculateFactory {
         try {
             return (Calculate) Class.forName(operatorClass.getName()).newInstance();
         } catch (InstantiationException e) {
-            log.error("发生 InstantiationException 异常，" + e );
+            System.out.println("发生 InstantiationException 异常，" + e );
         } catch (IllegalAccessException e) {
-            log.error("发生 IllegalAccessException 异常，" + e );
+            System.out.println("发生 IllegalAccessException 异常，" + e );
         } catch (ClassNotFoundException e) {
-            log.error("发生 ClassNotFoundException 异常，" + e );
+            System.out.println("发生 ClassNotFoundException 异常，" + e );
         }
         throw new RuntimeException("您输入的运算操作符不合法！");
     }

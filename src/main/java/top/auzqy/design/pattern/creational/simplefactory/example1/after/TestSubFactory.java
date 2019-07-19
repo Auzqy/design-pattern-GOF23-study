@@ -1,6 +1,5 @@
 package top.auzqy.design.pattern.creational.simplefactory.example1.after;
 
-import lombok.extern.slf4j.Slf4j;
 import top.auzqy.design.pattern.creational.simplefactory.example1.before.Car;
 
 /**
@@ -8,7 +7,6 @@ import top.auzqy.design.pattern.creational.simplefactory.example1.before.Car;
  * @Author: zqy
  * @CreateTime: 2019-07-18 16:01
  */
-@Slf4j
 public class TestSubFactory extends CarFactory {
 
     /**
@@ -19,7 +17,7 @@ public class TestSubFactory extends CarFactory {
      * @return
      */
     public Car produce(String carType){
-        log.info("子类的 non-static produce 工厂方法");
+        System.out.println("子类的 non-static produce 工厂方法");
         return null;
     }
 
@@ -32,7 +30,7 @@ public class TestSubFactory extends CarFactory {
      * @return
      */
     public static Car produceByReflection(Class calzz){
-        log.info("子类的 static produceByReflection 工厂方法");
+        System.out.println("子类的 static produceByReflection 工厂方法");
         return null;
     }
 }

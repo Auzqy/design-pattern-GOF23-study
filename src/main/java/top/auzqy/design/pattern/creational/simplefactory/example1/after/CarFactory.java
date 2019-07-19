@@ -1,6 +1,5 @@
 package top.auzqy.design.pattern.creational.simplefactory.example1.after;
 
-import lombok.extern.slf4j.Slf4j;
 import top.auzqy.design.pattern.creational.simplefactory.example1.before.BMWCar;
 import top.auzqy.design.pattern.creational.simplefactory.example1.before.BenzCar;
 import top.auzqy.design.pattern.creational.simplefactory.example1.before.Car;
@@ -16,7 +15,6 @@ import top.auzqy.design.pattern.creational.simplefactory.example1.before.Car;
  * @Author: zqy
  * @CreateTime: 2019-07-18 15:31
  */
-@Slf4j
 public class CarFactory {
 
     /**
@@ -31,13 +29,13 @@ public class CarFactory {
      */
     public Car produce(String carType){
         if("benz".equalsIgnoreCase(carType)){
-            log.info("一辆 【奔驰】 汽车生产出来了！");
+            System.out.println("一辆 【奔驰】 汽车生产出来了！");
             return new BenzCar();
         } else if ("bmw".equalsIgnoreCase(carType)) {
-            log.info("一辆 【宝马】 汽车生产出来了！");
+            System.out.println("一辆 【宝马】 汽车生产出来了！");
             return new BMWCar();
         } else {
-            log.error("所传车辆类型工厂当前无法建造！");
+            System.out.println("所传车辆类型工厂当前无法建造！");
             return null;
         }
     }
@@ -54,11 +52,11 @@ public class CarFactory {
             Car car = (Car)Class.forName(calzz.getName()).newInstance();
             return car;
         } catch (InstantiationException e) {
-            log.error("发生异常，" + e);
+            System.out.println("发生异常，" + e);
         } catch (IllegalAccessException e) {
-            log.error("发生异常，" + e);
+            System.out.println("发生异常，" + e);
         } catch (ClassNotFoundException e) {
-            log.error("发生异常，" + e);
+            System.out.println("发生异常，" + e);
         }
         return null;
     }

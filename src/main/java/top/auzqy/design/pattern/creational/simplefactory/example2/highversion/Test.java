@@ -1,8 +1,5 @@
 package top.auzqy.design.pattern.creational.simplefactory.example2.highversion;
 
-import lombok.extern.slf4j.Slf4j;
-
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 /**
@@ -10,7 +7,6 @@ import java.util.Scanner;
  * @Author: zqy
  * @CreateTime: 2019-07-19 18:12
  */
-@Slf4j
 public class Test {
     public static void main(String[] args) {
         methodCalculate();
@@ -34,10 +30,16 @@ public class Test {
             System.out.println("请输入另一个需要计算的数：");
             calculate.setBigDecimal2(scanner.nextBigDecimal());
 
-            log.info("计算机器显示：{} {} {} = {}",
-                    calculate.getBigDecimal1(),
-                    operator,
-                    calculate.getBigDecimal2(),
+//            log.info("计算机器显示：{} {} {} = {}",
+//                    calculate.getBigDecimal1(),
+//                    operator,
+//                    calculate.getBigDecimal2(),
+//                    calculate.doCalculate());
+            System.out.println(
+                    "计算机器显示：" +
+                    calculate.getBigDecimal1() + " " +
+                    operator + " " +
+                    calculate.getBigDecimal2() + " = " +
                     calculate.doCalculate());
         }
     }
