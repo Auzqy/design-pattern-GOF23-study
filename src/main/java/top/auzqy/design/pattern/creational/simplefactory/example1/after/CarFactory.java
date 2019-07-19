@@ -21,7 +21,8 @@ public class CarFactory {
      * @Description: 这种方式如果扩展的话，需要增加新的 if/else 的判断
      *              违反了开闭原则
      *
-     *              相对对应的解决违反开闭原则的方式可以使用反射，如
+     *              相对对应的解决违反开闭原则的方式可以使用反射，
+     *                  如: produceByReflection()
      * @Author: zqy
      * @CreateTime: 2019-07-18 15:39
      * @param carType   需要建造的车辆类型

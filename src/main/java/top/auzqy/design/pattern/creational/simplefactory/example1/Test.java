@@ -9,9 +9,9 @@ import top.auzqy.design.pattern.creational.simplefactory.example1.before.Car;
 public class Test {
     public static void main(String[] args) {
 //        testUseSimpleFactoryBefore();
-//        testUseSimpleFactoryAfter();
+        testUseSimpleFactoryAfter();
 //        testUseSimpleFactoryAfterByReflection();
-        testUseSimpleFactoryAfterByReflectionInSubFactory();
+//        testUseSimpleFactoryAfterByReflectionInSubFactory();
     }
 
     /**

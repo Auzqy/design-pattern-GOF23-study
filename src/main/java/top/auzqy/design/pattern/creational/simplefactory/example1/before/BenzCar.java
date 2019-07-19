@@ -1,7 +1,5 @@
 package top.auzqy.design.pattern.creational.simplefactory.example1.before;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * @Description: 具体的将要生产的 奔驰汽车
  * @Author: zqy
