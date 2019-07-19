@@ -4,6 +4,7 @@ package top.auzqy.design.pattern.structural.adapter.example1.classadapter;
  * @Description: 客户端
  *          测试或者说表演一下这哥几个是如何在一起工作的
  *
+ *
  * @Author: zqy
  * @CreateTime: 2019-07-19 23:59
  */
