@@ -1,7 +1,7 @@
-package top.auzqy.design.pattern.creational.simplefactory.after;
+package top.auzqy.design.pattern.creational.simplefactory.example1.after;
 
 import lombok.extern.slf4j.Slf4j;
-import top.auzqy.design.pattern.creational.simplefactory.before.Car;
+import top.auzqy.design.pattern.creational.simplefactory.example1.before.Car;
 
 /**
  * @Description: 仅仅是为了测试一下子类继承父类时，对 static 方法的处理

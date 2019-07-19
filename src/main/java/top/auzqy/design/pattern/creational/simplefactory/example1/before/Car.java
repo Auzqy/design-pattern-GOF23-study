@@ -1,4 +1,4 @@
-package top.auzqy.design.pattern.creational.simplefactory.before;
+package top.auzqy.design.pattern.creational.simplefactory.example1.before;
 
 /**
  * @Description: 使用设计模式之前的一般写法

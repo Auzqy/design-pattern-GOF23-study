@@ -1,11 +1,10 @@
-package top.auzqy.design.pattern.creational.simplefactory;
+package top.auzqy.design.pattern.creational.simplefactory.example1;
 
-import com.sun.org.glassfish.gmbal.Description;
-import top.auzqy.design.pattern.creational.simplefactory.after.CarFactory;
-import top.auzqy.design.pattern.creational.simplefactory.after.TestSubFactory;
-import top.auzqy.design.pattern.creational.simplefactory.before.BMWCar;
-import top.auzqy.design.pattern.creational.simplefactory.before.BenzCar;
-import top.auzqy.design.pattern.creational.simplefactory.before.Car;
+import top.auzqy.design.pattern.creational.simplefactory.example1.after.CarFactory;
+import top.auzqy.design.pattern.creational.simplefactory.example1.after.TestSubFactory;
+import top.auzqy.design.pattern.creational.simplefactory.example1.before.BMWCar;
+import top.auzqy.design.pattern.creational.simplefactory.example1.before.BenzCar;
+import top.auzqy.design.pattern.creational.simplefactory.example1.before.Car;
 
 public class Test {
     public static void main(String[] args) {

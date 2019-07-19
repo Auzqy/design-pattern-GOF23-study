@@ -1,4 +1,4 @@
-package top.auzqy.design.pattern.creational.simplefactory.before;
+package top.auzqy.design.pattern.creational.simplefactory.example1.before;
 
 import lombok.extern.slf4j.Slf4j;
 

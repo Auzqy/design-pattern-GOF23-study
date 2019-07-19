@@ -1,9 +1,9 @@
-package top.auzqy.design.pattern.creational.simplefactory.after;
+package top.auzqy.design.pattern.creational.simplefactory.example1.after;
 
 import lombok.extern.slf4j.Slf4j;
-import top.auzqy.design.pattern.creational.simplefactory.before.BMWCar;
-import top.auzqy.design.pattern.creational.simplefactory.before.BenzCar;
-import top.auzqy.design.pattern.creational.simplefactory.before.Car;
+import top.auzqy.design.pattern.creational.simplefactory.example1.before.BMWCar;
+import top.auzqy.design.pattern.creational.simplefactory.example1.before.BenzCar;
+import top.auzqy.design.pattern.creational.simplefactory.example1.before.Car;
 
 /**
  * @Description: 使用简单工厂设计模式后
