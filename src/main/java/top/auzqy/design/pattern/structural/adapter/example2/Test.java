@@ -9,7 +9,7 @@ public class Test {
         ymNoEnglish.defense();
 
 
-        System.out.println(" =============== ");
+        System.out.println(" ================ ");
 
         // 有了翻译官时，姚明的清晰
         AbstractPlayer ymHasTranslator = new TranslatorAdapter("姚明");
