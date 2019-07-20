@@ -1,4 +1,4 @@
-package top.auzqy.design.pattern.structural.adapter.example1.classadapter;
+package top.auzqy.design.pattern.structural.adapter.example1.objectadapter;
 
 /**
  * @Description: 目标类
@@ -16,10 +16,13 @@ package top.auzqy.design.pattern.structural.adapter.example1.classadapter;
  * @Author: zqy
  * @CreateTime: 2019-07-19 23:57
  */
-public class Adapter extends Adaptee implements Target {
+public class Adapter implements Target {
+
+    private Adaptee adaptee = new Adaptee();
+
     @Override
     public void alreadyOnlineMethod() {
         // 适配器可以为其真正想执行的方法添加一些逻辑，如果有需要的话
-        super.adapteeActualRequestMethod();
+        adaptee.adapteeActualRequestMethod();
     }
 }

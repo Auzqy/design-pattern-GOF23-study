@@ -1,4 +1,4 @@
-package top.auzqy.design.pattern.structural.adapter.example1.classadapter;
+package top.auzqy.design.pattern.structural.adapter.example1.objectadapter;
 
 /**
  * @Description: 被适配者类
