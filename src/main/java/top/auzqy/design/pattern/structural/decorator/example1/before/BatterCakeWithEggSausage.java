@@ -5,7 +5,7 @@ package top.auzqy.design.pattern.structural.decorator.example1.before;
  * @Author: zqy
  * @CreateTime: 2019-07-20 19:52
  */
-public class BatterCakeWithEggSausage extends AbstractBatterCake {
+public class BatterCakeWithEggSausage extends BatterCake {
     @Override
     protected String getDesc() {
         return super.getDesc() + "加了一个鸡蛋，又加了一个火腿";

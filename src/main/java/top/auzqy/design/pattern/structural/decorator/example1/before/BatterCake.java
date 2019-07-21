@@ -5,7 +5,7 @@ package top.auzqy.design.pattern.structural.decorator.example1.before;
  * @Author: zqy
  * @CreateTime: 2019-07-20 19:49
  */
-public abstract class AbstractBatterCake {
+public class BatterCake {
     protected String getDesc(){
         return "煎饼";
     }

@@ -20,11 +20,11 @@ public class Test {
      */
     public static void beforeDecorator(){
         // 要一个加鸡蛋的煎饼
-        AbstractBatterCake batterCake1 = new BatterCakeWithEgg();
+        BatterCake batterCake1 = new BatterCakeWithEgg();
         System.out.println(batterCake1.getDesc() + " 销售价格:" + batterCake1.cost());
 
         // 要一个加鸡蛋和一个火腿的煎饼
-        AbstractBatterCake batterCake2 = new BatterCakeWithEggSausage();
+        BatterCake batterCake2 = new BatterCakeWithEggSausage();
         System.out.println(batterCake2.getDesc() + " 销售价格:" + batterCake2.cost());
     }
 
