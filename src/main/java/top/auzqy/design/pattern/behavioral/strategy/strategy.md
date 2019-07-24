@@ -37,13 +37,15 @@ eg1_3 进一步逼真演进一下 todo
 
 具体的在模拟一下，如何写一个真正通用的
 
+还可以考虑一下 反射
+
 ### 2. example2 todo
 
 
 
 
 ## 博客地址 
-https://www.jianshu.com/p/52c914162f4b
+https://www.jianshu.com/p/9c0e505b43a8
 
 
 
