@@ -47,6 +47,12 @@
             <artifactId>guava</artifactId>
             <version>20.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
     </dependencies>
 <!--    <build>-->
 <!--        <finalName>design-pattern-GOF23-study</finalName>-->
