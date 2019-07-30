@@ -66,6 +66,7 @@ eg1_3 让 VideoState 持有 VideoContext 的引用 <br/>
 5. 加班状态 <br/>
 6. 猝死状态 <br/>
 
+(注：该代码有执行顺序的要求，仅做示例)
 
 ## 博客地址 
 https://www.jianshu.com/p/9c0e505b43a8
