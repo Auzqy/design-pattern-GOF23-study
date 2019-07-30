@@ -52,7 +52,7 @@ public class PauseState extends VideoState{
 eg1_2 在eg1_1的基础上，简化一下操作 todo <br/>
 
 
-eg1_3 让 VideoState 持有 VideoContext 的引用 todo <br/>
+eg1_3 让 VideoState 持有 VideoContext 的引用 <br/>
 
 
 
