@@ -15,6 +15,7 @@
 4. 停止状态 <br/>
 
 eg1_1 在每个具体状态类下的操作 <br/>
+
 ```
 /**
  * description:  暂停播放
@@ -48,17 +49,11 @@ public class PauseState extends VideoState{
 }
 ```
     
-eg1_2 在eg1_1的基础上，简化一下操作 <br/>
+eg1_2 在eg1_1的基础上，简化一下操作 todo <br/>
 
 
-eg1_3 进一步逼真演进一下 todo
-比如：
-对于满减 有不同的具体的策略，比如 满100减20，满200减50 ……
-对于返现 也有不同的具体的策略，比如 反20，反50等
+eg1_3 让 VideoState 持有 VideoContext 的引用 todo <br/>
 
-具体的在模拟一下，如何写一个真正通用的
-
-还可以考虑一下 反射
 
 
 ### 2. example2 
