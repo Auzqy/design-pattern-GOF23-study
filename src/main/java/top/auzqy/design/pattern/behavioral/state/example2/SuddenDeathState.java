@@ -13,8 +13,10 @@ public class SuddenDeathState extends WorkState {
             System.out.println(
                     String.format("当前时间为: %s,要猝死了！—— 【 %s 】",
                             work.getHour(), work.getWorkState().getClass().getSimpleName()));
-        }else { // 超过4点，转入下午工作状态
-            System.out.println("人已猝死！");
+        }else { // 转入猝死状态
+            System.out.println(
+                    String.format("当前时间为: %s,发现人已猝死！—— 【 %s 】",
+                            work.getHour(), work.getWorkState().getClass().getSimpleName()));
         }
     }
 }

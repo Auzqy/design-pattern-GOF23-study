@@ -1,7 +1,9 @@
 
 ## 概述 
 
-状态模式（State），
+状态模式（State），容许一个对象在其内部状态改变时，改变他的行为（当然不改变他的行为，只做状态的转换，也是可以的）。
+
+一定长度上可以简化 if/else 分支带来的麻烦。
 
 
 ## 示例说明
@@ -69,7 +71,7 @@ eg1_3 让 VideoState 持有 VideoContext 的引用 <br/>
 (注：该代码有执行顺序的要求，仅做示例)
 
 ## 博客地址 
-https://www.jianshu.com/p/9c0e505b43a8
+https://www.jianshu.com/p/1eab2f039b10
 
 
 

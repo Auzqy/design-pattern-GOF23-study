@@ -31,9 +31,9 @@ public class Test {
         work.programming();
         System.out.println();
 
-        work.setHour(2);
-        work.programming();
-        System.out.println();
+//        work.setHour(2);
+//        work.programming();
+//        System.out.println();
 
 
         work.setHour(6);
