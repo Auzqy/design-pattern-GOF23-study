@@ -1,6 +1,10 @@
 ## 概述 
 
-命令模式（Command），
+命令模式（Command），将一个请求封装成一个对象，以便使用不同的请求。
+
+命令模式解决了应用程序中对象的职责以及他们之间的通信方式。
+
+![命令模式的优点及使用原则](https://upload-images.jianshu.io/upload_images/13338994-6f735d233edcdc8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 示例说明
 
@@ -13,7 +17,7 @@
 
 
 ## 博客地址 
-https://www.jianshu.com/p/52c914162f4b
+https://www.jianshu.com/p/ea326eed3208
 
 
 
