@@ -24,6 +24,67 @@
 (比如 QQ，网络游戏或者论坛都有的 Avatar 系统，更换格式个样的皮肤或者服饰等)
 
 
+## 与代理模式的对比
+
+### code
+```
+// 代理模式的代码结构(下面的接口也可以替换成抽象类)
+public interface IA {
+  void f();
+}
+public class A impelements IA {
+  public void f() { //... }
+}
+public class AProxy impements IA {
+  private IA a;
+  public AProxy(IA a) {
+    this.a = a;
+  }
+  
+  public void f() {
+    // 新添加的代理逻辑
+    a.f();
+    // 新添加的代理逻辑
+  }
+}
+
+// 装饰器模式的代码结构(下面的接口也可以替换成抽象类)
+public interface IA {
+  void f();
+}
+public class A impelements IA {
+  public void f() { //... }
+}
+public class ADecorator impements IA {
+  private IA a;
+  public ADecorator(IA a) {
+    this.a = a;
+  }
+  
+  public void f() {
+    // 功能增强代码
+    a.f();
+    // 功能增强代码
+  }
+}
+```
+
+### 关于代理模式和装饰者模式，各自应用场景和区别
+
+1. 代理模式和装饰者模式都是 代码增强这一件事的落地方案。
+前者个人认为偏重业务无关，高度抽象，和稳定性较高的
+场景（性能其实可以抛开不谈）。
+后者偏重业务相关，定制化诉求高，改动较频繁的场景。
+
+2. 缓存这件事一般都是高度抽象，全业务通用，基本不会改动的东西，
+所以一般也是采用代理模式，让业务开发从缓存代码的重复劳动中解放出来。
+但如果当前业务的缓存实现需要特殊化定制，
+需要揉入业务属性，那么就该采用装饰者模式。
+因为其定制性强，其他业务也用不着，而且业务是频繁变动的，
+所以改动的可能也大，相对于动代，
+装饰者在调整（修改和重组）代码这件事上显得更灵活。
+
+
 ## 博客地址
 https://www.jianshu.com/p/7eaeac3814cb
 
