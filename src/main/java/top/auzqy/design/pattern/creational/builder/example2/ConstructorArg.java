@@ -1,4 +1,4 @@
-package top.auzqy.design.pattern.creational.builder;
+package top.auzqy.design.pattern.creational.builder.example2;
 
 /**
  * 需求：

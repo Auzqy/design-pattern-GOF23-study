@@ -1,4 +1,4 @@
-package top.auzqy.design.pattern.creational.builder;
+package top.auzqy.design.pattern.creational.builder.example1;
 
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
