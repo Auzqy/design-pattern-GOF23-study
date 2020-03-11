@@ -1,7 +1,7 @@
-package top.auzqy.design.pattern.structural.proxy.rpc.demo.server;
+package top.auzqy.design.pattern.structural.proxy.dynamic.rpc.demo.server;
 
 
-import top.auzqy.design.pattern.structural.proxy.rpc.RpcServer;
+import top.auzqy.design.pattern.structural.proxy.dynamic.rpc.RpcServer;
 
 public class RpcServerApplication {
 

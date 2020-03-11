@@ -1,4 +1,4 @@
-package top.auzqy.design.pattern.structural.proxy.rpc;
+package top.auzqy.design.pattern.structural.proxy.dynamic.rpc;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

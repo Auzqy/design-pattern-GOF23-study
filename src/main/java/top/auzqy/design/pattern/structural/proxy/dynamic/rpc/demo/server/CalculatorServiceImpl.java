@@ -1,4 +1,4 @@
-package top.auzqy.design.pattern.structural.proxy.rpc.demo.server;
+package top.auzqy.design.pattern.structural.proxy.dynamic.rpc.demo.server;
 
 public class CalculatorServiceImpl implements CalculatorService {
 

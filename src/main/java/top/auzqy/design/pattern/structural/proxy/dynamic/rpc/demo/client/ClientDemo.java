@@ -1,7 +1,7 @@
-package top.auzqy.design.pattern.structural.proxy.rpc.demo.client;
+package top.auzqy.design.pattern.structural.proxy.dynamic.rpc.demo.client;
 
 
-import top.auzqy.design.pattern.structural.proxy.rpc.RpcClient;
+import top.auzqy.design.pattern.structural.proxy.dynamic.rpc.RpcClient;
 
 public class ClientDemo {
 
