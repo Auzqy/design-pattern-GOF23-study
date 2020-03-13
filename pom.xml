@@ -53,6 +53,14 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.5</version>
         </dependency>
+
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+
     </dependencies>
 <!--    <build>-->
 <!--        <finalName>design-pattern-GOF23-study</finalName>-->
