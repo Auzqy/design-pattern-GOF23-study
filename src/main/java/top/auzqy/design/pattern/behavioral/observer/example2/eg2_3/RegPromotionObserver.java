@@ -10,8 +10,14 @@ public class RegPromotionObserver {
         this.promotionService = promotionService;
     }
 
+    public RegPromotionObserver() {
+    }
+
+
+
     @Subscribe
     public void handleRegSuccess(long userId) {
+        System.out.println("11111");
         promotionService.issueNewUserExperienceCash(userId);
     }
 }

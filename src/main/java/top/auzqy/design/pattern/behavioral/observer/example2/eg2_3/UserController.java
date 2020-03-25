@@ -18,12 +18,12 @@ public class UserController {
         this.userService = userService;
 
         // 同步阻塞模式
-         eventBus = new EventBus();
+//         eventBus = new EventBus();
 
         // 异步非阻塞模式
-//        eventBus = new AsyncEventBus(
-//                Executors.newFixedThreadPool(
-//                        DEFAULT_EVENTBUS_THREAD_POOL_SIZE));
+        eventBus = new AsyncEventBus(
+                Executors.newFixedThreadPool(
+                        DEFAULT_EVENTBUS_THREAD_POOL_SIZE));
     }
 
     public void setRegObservers(List<Object> observers) {
@@ -32,11 +32,15 @@ public class UserController {
         }
     }
 
-    public Long register(String telephone, String password) {
+    public Long register(String telephone, String password){
         //省略输入参数的校验代码
         // 省略userService.register()异常的try-catch代码
         long userId = userService.register(telephone, password);
         eventBus.post(userId);
+
+        while (Thread.activeCount() > 1) {
+            Thread.yield();
+        }
         return userId;
     }
 }

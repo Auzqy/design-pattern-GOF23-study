@@ -10,8 +10,12 @@ public class RegNotificationObserver {
         this.notificationService = notificationService;
     }
 
+    public RegNotificationObserver() {
+    }
+
     @Subscribe
     public void handleRegSuccess(long userId) {
+        System.out.println("2222");
         notificationService.sendInboxMessage(userId, "...");
     }
 }
