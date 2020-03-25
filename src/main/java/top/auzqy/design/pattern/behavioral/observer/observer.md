@@ -19,7 +19,6 @@
 以此来控制和应对代码的复杂性，提高代码的可扩展性。
 
 
-
 ## 示例说明
 
 ### 1. example1
@@ -31,7 +30,7 @@ jdk中观察者模式的实现方式
 ### 2. example2 
 2.1 guava中观察者模式的实现  <br/>
 2.2 用 guava 的方式修改 example1 中的例子 <br/>
-
+2.3 Guava Event Bus
 
 ## 博客地址 
 https://www.jianshu.com/p/52c914162f4b
