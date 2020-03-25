@@ -14,14 +14,16 @@ public class UserController {
     private EventBus eventBus;
     private static final int DEFAULT_EVENTBUS_THREAD_POOL_SIZE = 20;
 
-    public UserController() {
+    public UserController(UserService userService) {
+        this.userService = userService;
+
         // 同步阻塞模式
-        // eventBus = new EventBus();
+         eventBus = new EventBus();
 
         // 异步非阻塞模式
-        eventBus = new AsyncEventBus(
-                Executors.newFixedThreadPool(
-                        DEFAULT_EVENTBUS_THREAD_POOL_SIZE));
+//        eventBus = new AsyncEventBus(
+//                Executors.newFixedThreadPool(
+//                        DEFAULT_EVENTBUS_THREAD_POOL_SIZE));
     }
 
     public void setRegObservers(List<Object> observers) {
