@@ -31,6 +31,7 @@ jdk中观察者模式的实现方式
 2.1 guava中观察者模式的实现  <br/>
 2.2 用 guava 的方式修改 example1 中的例子 <br/>
 2.3 Guava Event Bus
+[guava 源码](https://github.com/google/guava)
 
 ## 博客地址 
 https://www.jianshu.com/p/52c914162f4b
