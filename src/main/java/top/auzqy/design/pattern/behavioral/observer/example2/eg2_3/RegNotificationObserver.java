@@ -14,8 +14,7 @@ public class RegNotificationObserver {
     }
 
     @Subscribe
-    public void handleRegSuccess(long userId) {
-        System.out.println("2222");
+    public void handleRegSuccess(Long userId) {
         notificationService.sendInboxMessage(userId, "...");
     }
 }

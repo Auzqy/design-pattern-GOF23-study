@@ -14,10 +14,14 @@ public class RegPromotionObserver {
     }
 
 
-
+    /**
+     * 注意这里的参数类型如果是基本类型，要使用包装类型
+     * 如果使用基本类型，这里是映射不到的
+     *
+     * @param userId
+     */
     @Subscribe
-    public void handleRegSuccess(long userId) {
-        System.out.println("11111");
+    public void handleRegSuccess(Long userId) {
         promotionService.issueNewUserExperienceCash(userId);
     }
 }

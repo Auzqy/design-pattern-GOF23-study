@@ -18,12 +18,12 @@ public class UserController {
         this.userService = userService;
 
         // 同步阻塞模式
-//         eventBus = new EventBus();
+        eventBus = new EventBus();
 
         // 异步非阻塞模式
-        eventBus = new AsyncEventBus(
-                Executors.newFixedThreadPool(
-                        DEFAULT_EVENTBUS_THREAD_POOL_SIZE));
+//        eventBus = new AsyncEventBus(
+//                Executors.newFixedThreadPool(
+//                        DEFAULT_EVENTBUS_THREAD_POOL_SIZE));
     }
 
     public void setRegObservers(List<Object> observers) {
@@ -38,9 +38,9 @@ public class UserController {
         long userId = userService.register(telephone, password);
         eventBus.post(userId);
 
-        while (Thread.activeCount() > 1) {
-            Thread.yield();
-        }
+//        while (Thread.activeCount() > 1) {
+//            Thread.yield();
+//        }
         return userId;
     }
 }
