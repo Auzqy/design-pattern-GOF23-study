@@ -7,6 +7,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * description:  在 v3 的基础上去掉一堆 if-else 逻辑
+ * createTime: 2020/7/9 20:06
+ * @author au
+ */
 public class Sorter {
   private static final long GB = 1000 * 1000 * 1000;
   private static final List<AlgRange> algs = new ArrayList<>();
