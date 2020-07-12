@@ -5,6 +5,10 @@ import java.util.List;
 
 
 /**
+ * 命令行的方式
+ *    javac xxx/ToolApplication.java
+ *    java xxx/ToolApplication "${resourceDirectory}"
+ *
  * 运行结果是：
  * Extract PDF.
  * Extract WORD.
