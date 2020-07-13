@@ -31,11 +31,14 @@
 如下所示：
 ```shell script
 >hello
->:listhello
+>:list
+hello
 >world
->:listhelloworld
+>:list
+helloworld
 >:undo
->:listhello
+>:list
+hello
 ```
 
 1. eg1_1 简易实现
