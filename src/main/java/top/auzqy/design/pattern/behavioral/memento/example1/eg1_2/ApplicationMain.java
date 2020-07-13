@@ -7,6 +7,7 @@ public class ApplicationMain {
         InputText inputText = new InputText();
         SnapshotHolder snapshotsHolder = new SnapshotHolder();
         Scanner scanner = new Scanner(System.in);
+
         while (scanner.hasNext()) {
             String input = scanner.next();
             if (":list".equals(input)) {
