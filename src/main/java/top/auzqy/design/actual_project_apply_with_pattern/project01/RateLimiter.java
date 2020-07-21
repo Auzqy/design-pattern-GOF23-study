@@ -28,7 +28,7 @@ public class RateLimiter {
         try {
           in.close();
         } catch (IOException e) {
-          log.error("close file error:{}", e);
+//          log.error("close file error:{}", e);
         }
       }
     }
