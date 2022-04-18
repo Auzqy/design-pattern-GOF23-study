@@ -3,12 +3,17 @@ package top.auzqy.design.pattern.creational.builder.example1;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * description:
+ * createTime: 2022/4/18 11:29
+ * @author au
+ */
 @Getter
 public class ResourcePoolConfig {
-  private String name;
-  private int maxTotal;
-  private int maxIdle;
-  private int minIdle;
+  private final String name;
+  private final int maxTotal;
+  private final int maxIdle;
+  private final int minIdle;
 
   private ResourcePoolConfig(Builder builder) {
     this.name = builder.name;
