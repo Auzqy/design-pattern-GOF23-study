@@ -16,9 +16,9 @@ package top.auzqy.design.pattern.creational.builder.example2;
          }
  */
 public class ConstructorArg {
-    private boolean isRef;
-    private Class type;
-    private Object arg;
+    private final boolean isRef;
+    private final Class type;
+    private final Object arg;
 
     public boolean isRef() {
         return isRef;
