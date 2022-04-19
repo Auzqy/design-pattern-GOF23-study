@@ -1,5 +1,10 @@
 package top.auzqy.design.pattern.behavioral.visitor.example1.eg1_1;
 
+/**
+ * description:
+ * createTime: 2022/4/19 14:38
+ * @author au
+ */
 public class PPTFile extends ResourceFile {
   public PPTFile(String filePath) {
     super(filePath);
