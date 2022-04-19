@@ -43,3 +43,9 @@ target/
 
 # .gradle
 .gradle
+
+# eclipse
+.classpath
+.project
+.settings/
+
