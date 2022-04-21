@@ -9,7 +9,7 @@ public class Logger {
   private static final Logger instance = new Logger();
 
   private Logger() {
-    File file = new File("/Users/wangzheng/log.txt");
+    File file = new File("/Users/au/temp/log.txt");
     try {
 		writer = new FileWriter(file, true);
 	} catch (IOException e) {
