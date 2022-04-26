@@ -1,4 +1,4 @@
-package top.auzqy.design.exercise.factory;
+package top.auzqy.design.exercise.factory.exercise002;
 
 public class MailSender implements Sender {
 	@Override
