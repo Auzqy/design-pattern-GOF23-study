@@ -1,5 +1,8 @@
 package top.auzqy.design.exercise.factory.exercise003;
 
+/**
+ * note: 工厂模式
+ */
 public class FactoryPatternDemo {
  
    public static void main(String[] args) {
